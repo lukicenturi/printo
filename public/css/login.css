@@ -1,0 +1,112 @@
+
+body {
+    background: #F4F3F2;
+}
+
+.container {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .brand img {
+    height: 50px;
+    margin: 0 auto;
+    display: block;
+}
+
+.container .tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.container .tabs a {
+    text-decoration: none;
+    color: #5FDDBD;
+    font-size: 2em;
+    font-weight: 200;
+    position: relative;
+}
+
+.container .tabs a:after {
+    content: "";
+    width: 0%;
+    height: 1px;
+    position: absolute;
+    background: #5FDDBD;
+    bottom: 0px;
+    transition: 0.4s all;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container .tabs a:hover:after {
+    width: 100%;
+}
+
+.container .tabs hr {
+    width: 30px;
+    height: 1px;
+    margin: 0px 10px;
+    transform: rotate(120deg);
+    background-color: #5FDDBD;
+
+}
+
+.container .tabs a.active {
+    font-weight: 800;
+}
+
+.container form{
+    background-color: white;
+    width: 450px;
+    max-width: 100%;
+    padding: 40px 40px;
+    margin: 0px auto;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container form .form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.container form input,
+.container form select
+{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #CCC8C3;
+    width: 100%;
+    height: 40px;
+    font-weight: 400;
+    z-index: 2;
+    position: relative;
+}
+
+.container form input + label,
+.container form select + label
+{
+
+    color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 9px;
+    transition: 0.4s all;
+    z-index: 1;
+    font-size: 0.9em;
+    user-select: none;
+}
+
+.container form select + label{
+    top: -11px;
+}
+
+.container form input + label.focus {
+    color: rgba(2, 202, 176, 0.6);
+    top: -11px;
+    font-size: 10px;
+}

@@ -1,0 +1,57 @@
+.drop{
+	background:#C9F1E4;
+	padding:10px;
+	transition:0.5s all;
+	display:flex;
+}
+.drop-inside{
+	border:3px dashed #60DCBC;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	padding:10px 0px;
+	flex:1;
+}
+.drop.is-drag{
+	padding:15px;
+}
+.drop-inside p{
+	margin:0px;
+	font-size:2em;
+}
+.drop-inside label{
+	color:#5FDDBD;
+	cursor:pointer;
+}
+.setup{
+	overflow:auto;
+}
+.address-setup{
+	border-left:1px solid #60DCBC;
+	display:none;
+}
+.button-print{
+	padding-top:30px;
+}
+.list-file{
+	height:100%;
+	display:none;
+	align-items:center;
+	justify-content:center;
+	flex-direction:column;
+	padding:20px;
+	width:200px;
+	overflow:hidden;
+}
+.list-file.active{
+	display:flex;
+
+}
+.list-file .name{
+	width:100%;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space: nowrap;  
+	text-align:center;
+}

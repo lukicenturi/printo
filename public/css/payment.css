@@ -1,0 +1,30 @@
+.payment-group{
+	overflow:auto;
+	margin-top:20px;
+}
+.payment{
+	display:flex;
+	margin-bottom:20px;
+	cursor:pointer;
+}
+.payment .wrapper-radio{
+	padding:10px;
+}
+.payment .wrapper-name img{
+	width:100px;
+}
+
+.big{
+	font-size: 2em;
+	line-height: 2em;
+}
+
+.big table{
+	width: 100%;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+.big td{
+	border: 1px solid black;
+}

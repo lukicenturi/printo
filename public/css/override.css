@@ -1,0 +1,15 @@
+.alert{
+	border-radius:0px;
+}
+.alert-danger{
+	color:white;
+	background:#F06292;
+
+}
+.alert-success{
+	color:white;
+	background:#00C853;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+	vertical-align: middle;
+}

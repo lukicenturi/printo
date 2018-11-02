@@ -1,0 +1,36 @@
+.choice{
+	overflow:auto;
+}
+input[type="radio"]{
+	margin-right:3px;
+}
+.choice>div{
+	transition:0.3s all;
+}
+.manual{
+	border-right:2px solid #DEDCDA;
+}
+
+.choice>div>div{
+	position:relative;
+}
+.manual-wrapper label{
+	color:black;
+}
+.manual-wrapper{
+	overflow:auto;
+}
+.whiter{
+	position:absolute;
+	top:0;
+	background:rgba(255,255,255,0.9);
+	left:0;
+	width:100%;
+	height:100%;
+}
+.col-sm-7 .whiter{
+	display:none;
+}
+.button-buy{
+	overflow:auto;
+}
