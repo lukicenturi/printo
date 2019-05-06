@@ -1,9 +1,9 @@
 @extends('dashboard')
 @section('css1')
-<link rel='stylesheet' type='text/css' href="{{asset('css/print.css')}}">
+<link rel='stylesheet' type='text/css' href="{{asset_custom('css/print.css')}}">
 @endsection
 @section('js1')
-<script type="text/javascript" src="{{asset('js/print.js')}}"></script>
+<script type="text/javascript" src="{{asset_custom('js/print.js')}}"></script>
 @endsection
 @section('content1')
 	<div class='second-container'>
@@ -11,15 +11,15 @@
 		<div class='part-group'>
 			<form action="{{url('dashboard/print')}}" method="POST" enctype='multipart/form-data' id='form-print' upload="{{url('dashboard/upload')}}">
 			<meta name="_token" content="{!! csrf_token() !!}" id='meta'>
-			<input type='hidden' id='resicon' value="{{asset('img/icon')}}">
+			<input type='hidden' id='resicon' value="{{asset_custom('img/icon')}}">
 			<input type='hidden' id='kodeprint' value="{{$kode}}">
-			<input type='hidden' id='printpath' value="{{asset('print')}}">
-			<input type='hidden' id='redirectpath' value="{{asset('dashboard/confirm')}}">
+			<input type='hidden' id='printpath' value="{{asset_custom('print')}}">
+			<input type='hidden' id='redirectpath' value="{{asset_custom('dashboard/confirm')}}">
 				<div class='upload'>
 				<h4> Upload File</h4>
 					<div class='drop'>
 						<div class='list-file'>	
-							<img src="{{asset('img/icon/pdf.png')}}"></img>
+							<img src="{{asset_custom('img/icon/pdf.png')}}"></img>
 							<div class="name">Profile.pdf</div>
 						</div>
 						<div class='drop-inside'>

@@ -7,16 +7,16 @@
 		<link rel="icon" href="img/favicon.ico">
 
 		<!-- CSS -->
-		<link rel="stylesheet" type="text/css" href="{{asset('css/normalize.css')}}">
-		<link rel="stylesheet" type="text/css" href="{{asset('css/fonts.css')}}">
-		<link rel="stylesheet" type="text/css" href="{{asset('bootstrap/css/bootstrap.min.css')}}">
-		<link rel="stylesheet" type="text/css" href="{{asset('css/override.css')}}">
-		<link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{asset_custom('css/normalize.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{asset_custom('css/fonts.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{asset_custom('bootstrap/css/bootstrap.min.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{asset_custom('css/override.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{asset_custom('css/style.css')}}">
 		@yield('css')
 		<!-- JS -->
-		<script type="text/javascript" src="{{asset('js/jquery-min.js')}}"></script>
-		<script type="text/javascript" src="{{asset('bootstrap/js/bootstrap.min.js')}}"></script>
-		<script type="text/javascript" src="{{asset('js/script.js')}}"></script>
+		<script type="text/javascript" src="{{asset_custom('js/jquery-min.js')}}"></script>
+		<script type="text/javascript" src="{{asset_custom('bootstrap/js/bootstrap.min.js')}}"></script>
+		<script type="text/javascript" src="{{asset_custom('js/script.js')}}"></script>
 		@yield('js')
 	</head>
 	<body>

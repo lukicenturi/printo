@@ -72,7 +72,9 @@ body {
 
 .container form .form-group {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .container form input,
@@ -86,6 +88,7 @@ body {
     font-weight: 400;
     z-index: 2;
     position: relative;
+    order: 2;
 }
 
 .container form input + label,
@@ -93,20 +96,26 @@ body {
 {
 
     color: rgba(0, 0, 0, 0.3);
-    position: absolute;
-    top: 9px;
+    position: relative;
     transition: 0.4s all;
     z-index: 1;
     font-size: 0.9em;
     user-select: none;
+    order: 1;
+    top: 30px;
+    margin: 0;
 }
 
 .container form select + label{
-    top: -11px;
+    top: 0;
+    margin-bottom: 3px;
 }
 
-.container form input + label.focus {
+.container form input:not(:placeholder-shown) + label,
+.container form input:focus + label
+{
     color: rgba(2, 202, 176, 0.6);
-    top: -11px;
+    top: 0;
+    margin-bottom: 3px;
     font-size: 10px;
 }

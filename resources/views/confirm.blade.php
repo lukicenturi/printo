@@ -1,9 +1,9 @@
 @extends('dashboard')
 @section('css1')
-<link rel='stylesheet' type='text/css' href="{{asset('css/confirm.css')}}">
+<link rel='stylesheet' type='text/css' href="{{asset_custom('css/confirm.css')}}">
 @endsection
 @section('js1')
-<script type="text/javascript" src="{{asset('js/confirm.js')}}"></script>
+<script type="text/javascript" src="{{asset_custom('js/confirm.js')}}"></script>
 @endsection
 @section('content1')
 	<div class='second-container'>

@@ -1,10 +1,10 @@
 @extends('main')
 @section('css')
-    <link rel='stylesheet' type='text/css' href="{{asset('css/dashboard.css')}}">
+    <link rel='stylesheet' type='text/css' href="{{asset_custom('css/dashboard.css')}}">
     @yield('css1')
 @endsection
 @section('js')
-    <script type="text/javascript" src="{{asset('js/dashboard.js')}}"></script>
+    <script type="text/javascript" src="{{asset_custom('js/dashboard.js')}}"></script>
     @yield('js1')
 @endsection
 
@@ -21,7 +21,7 @@
             <div class='head'>
                 <div class='icon'>
                     <a href="{{url('/')}}">
-                        <img src="{{asset('img/logo.png')}}">
+                        <img src="{{asset_custom('img/logo.png')}}">
                     </a>
                 </div>
             </div>
@@ -29,11 +29,11 @@
                 <div class='wrapper-profile'>
                     <div class='profile-image'>
                         <div class='image'>
-                            <img src="{{asset('img/profile/'.Auth::user()->img)}}">
+                            <img src="{{asset_custom('img/profile/'.Auth::user()->img)}}">
                         </div>
-                        <div class='setting'>
-                            <a href="{{url('dashboard/profile')}}"><span class='glyphicon glyphicon-cog'></span></a>
-                        </div>
+                        {{--<div class='setting'>--}}
+                            {{--<a href="{{url('dashboard/profile')}}"><span class='glyphicon glyphicon-cog'></span></a>--}}
+                        {{--</div>--}}
                     </div>
                     <div class='profile-name'>
                         <span>{{Auth::user()->name}}</span>

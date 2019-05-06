@@ -1,9 +1,9 @@
 @extends('dashboard')
 @section('css1')
-<link rel='stylesheet' type='text/css' href="{{asset('css/atm.css')}}">
+<link rel='stylesheet' type='text/css' href="{{asset_custom('css/atm.css')}}">
 @endsection
 @section('js1')
-<script type="text/javascript" src="{{asset('js/atm.js')}}"></script>
+<script type="text/javascript" src="{{asset_custom('js/atm.js')}}"></script>
 @endsection
 @section('content1')
 	<div class='second-container'>

@@ -12,7 +12,7 @@
 				</div>
 				<div class="col-sm-6 image">
 					<div class="banner-image">
-						<img src="{{asset('img/banner-image.png')}}">
+						<img src="{{asset_custom('img/banner-image.png')}}">
 					</div>
 				</div>
 			</div>
@@ -29,23 +29,23 @@
 			<div class="container">
 				<div>
 					<div class="image">
-						<img src="{{asset('img/register.png')}}">
+						<img src="{{asset_custom('img/register.png')}}">
 					</div>
 					<div class="caption">
 						<h1>Register at Go-Print now</h1>
 						<p>Immediately register at Go-Print to start printing your file and get a variety of attractive promotions</p>
-						<button class="button ghost green">REGISTER</button>
+						<a href="{{url('register')}}"><button class="button ghost green">REGISTER</button></a>
 						<a href="{{url('login')}}"><button class="button black">LOGIN</button></a>
 					</div>
 				</div>
 				<div>	
 					<div class="image">
-						<img src="{{asset('img/print.png')}}">
+						<img src="{{asset_custom('img/print.png')}}">
 					</div>
 					<div class="caption">
 						<h1>Print your file now</h1>
 						<p>Immediately prove our quality by print your file at Go-Print</p>
-						<button class="button ghost green">START</button>
+						<a href="{{url('dashboard')}}"><button class="button ghost green">START</button></a>
 					</div>
 				</div>
 			</div>
@@ -63,19 +63,19 @@
 				<h1 class="section-header">Why Go-Print?</h1>
 				<div class="item-wrapper">
 					<figure class="item">
-						<img src="{{asset('img/why-1.png')}}">
+						<img src="{{asset_custom('img/why-1.png')}}">
 						<figcaption>24 Hours Service</figcaption>
 					</figure>
 					<figure class="item">
-						<img src="{{asset('img/why-2.png')}}">
+						<img src="{{asset_custom('img/why-2.png')}}">
 						<figcaption>Easy Proccess</figcaption>
 					</figure>
 					<figure class="item">
-						<img src="{{asset('img/why-3.png')}}">
+						<img src="{{asset_custom('img/why-3.png')}}">
 						<figcaption>Affordable Price</figcaption>
 					</figure>
 					<figure class="item">
-						<img src="{{asset('img/why-4.png')}}">
+						<img src="{{asset_custom('img/why-4.png')}}">
 						<figcaption>Fast Response</figcaption>
 					</figure>
 				</div>
@@ -97,22 +97,22 @@
 				</div>
 				<div class='item-wrapper'>
 					<div class='item'>
-						<img src="{{asset('img/step-1.png')}}">
+						<img src="{{asset_custom('img/step-1.png')}}">
 						<div class='number'>1</div>
 						<div class='caption'>Register</div>
 					</div>
 					<div class='item'>
-						<img src="{{asset('img/step-2.png')}}">
+						<img src="{{asset_custom('img/step-2.png')}}">
 						<div class='number'>2</div>
 						<div class='caption'>Buy Coin</div>
 					</div>
 					<div class='item'>
-						<img src="{{asset('img/step-3.png')}}">
+						<img src="{{asset_custom('img/step-3.png')}}">
 						<div class='number'>3</div>
 						<div class='caption'>Upload File</div>
 					</div>
 					<div class='item'>
-						<img src="{{asset('img/step-4.png')}}">
+						<img src="{{asset_custom('img/step-4.png')}}">
 						<div class='number'>4</div>
 						<div class='caption'>Take/Send!!</div>
 					</div>
@@ -127,7 +127,7 @@
 				</button>
 			</div>
 		</div>
-		<div class="section" id="newsletter" style="background-image:url('{{asset('img/newsletter.jpg')}}'">
+		<div class="section" id="newsletter" style="background-image:url('{{asset_custom('img/newsletter.jpg')}}')">
 				<div class='container'>
 					<div class='caption'>
 						<h1>Newsletter</h1>

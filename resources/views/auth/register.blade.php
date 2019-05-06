@@ -1,16 +1,13 @@
 @extends('main')
 @section('css')
-	<link rel="stylesheet" type="text/css" href="{{asset('css/login.css')}}">
-@endsection
-@section('js')
-	<script type="text/javascript" src="{{asset('js/login.js')}}"></script>
+	<link rel="stylesheet" type="text/css" href="{{asset_custom('css/login.css')}}">
 @endsection
 
 @section('content')
 	<body>
 		<div class='container'>
 			<div class='brand'>
-				<a href="{{url('/')}}"><img src="{{asset('img/logo.png')}}"></a>
+				<a href="{{url('/')}}"><img src="{{asset_custom('img/logo.png')}}"></a>
 			</div>
 			<div class='tabs'>
 				<a href="{{url('login')}}">LOGIN</a>
@@ -21,29 +18,29 @@
 			{!! csrf_field() !!}
 
 				<div class="form-group">
-					<input type="text" name="name" id="name">
+					<input type="text" name="name" id="name" value="{{old('name')}}" placeholder=" ">
 					<label>Name</label>
 				</div>
 				<div class="form-group">
-					<input type="email" name="email" id="email">
+					<input type="email" name="email" id="email" value="{{old('email')}}" placeholder=" ">
 					<label>Email</label>
 				</div>
 				<div class="form-group">
-					<input type="password" name="password" id="password">
+					<input type="password" name="password" id="password" placeholder=" ">
 					<label>Password</label>
 				</div>
 				<div class="form-group">
-					<input type="password" name="password_confirmation" id="password_confirmation">
+					<input type="password" name="password_confirmation" id="password_confirmation" placeholder=" ">
 					<label>Confirm Password</label>
 				</div>
 				<div class="form-group">
-					<input type="text" name="nohp" id="nohp">
+					<input type="text" name="nohp" id="nohp" value="{{old('nophp')}}" placeholder=" ">
 					<label>No Telp</label>
 				</div>
 				<div class="form-group">
 					<select name="role" id="role">
-						<option value="USER">User (I want to print my documents)</option>
-						<option value="PARTNER">Partner (I want to lend my printers)</option>
+						<option value="USER" @if(old('role') == 'USER') selected @endif>User (I want to print my documents)</option>
+						<option value="PARTNER" @if(old('role') == 'PARTNER') selected @endif>Partner (I want to lend my printers)</option>
 					</select>
 					<label>Register As</label>
 				</div>
